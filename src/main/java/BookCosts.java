@@ -18,7 +18,7 @@ public class BookCosts {
         for (Double d: cost){
             sum += d;
         }
-        System.out.printf("The total cost of your books" + sum);
+        System.out.printf("The total cost of your books $" + sum);
     }
 
 }

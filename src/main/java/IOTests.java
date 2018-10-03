@@ -83,6 +83,9 @@ public class IOTests {
     private static boolean isWriteableFile(String fileName) {
         try {
             File file = new File(fileName);
+            if (fileName ==null){
+                return false;
+            }
             if (fileName.length() == 0) {
                 throw (new IOException("invalid file name: " + fileName));
             }
